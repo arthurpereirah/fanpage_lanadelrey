@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lana Del Rey - Fanpage | Vida</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilização extra para destacar o header */
+      header {
+        background: url('https://i.pinimg.com/originals/0b/4e/f1/0b4ef1303e8d46fc98b696c5ae4070ea.jpg')
+          no-repeat center center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <!-- Fundo com estética inspirada em Lana Del Rey: predominância de tons escuros e texto claro -->
+  <body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Link para home -->
+        <a class="navbar-brand" href="index.html">Lana Del Rey</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discografia.html">Discografia</a>
+            </li>
+            <!-- Dropdown com links complementares -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Mais
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="sobre.html">Sobre</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header com imagem de fundo -->
+    <header class="py-5">
+      <div class="container text-center">
+        <h1 class="display-4 text-white">A Vida de Lana Del Rey</h1>
+        <p class="lead text-light">
+          Descubra os momentos que moldaram a mulher por trás da estrela.
+        </p>
+      </div>
+    </header>
+
+    <!-- Seção Biografia -->
+    <section id="biografia" class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWBSSpBAK1Ti42EKdN4qttNVg2v8IPoq_ZY8LrTgls7qh-NB9E9C-3QmF8Gc-blkWi7dTjpAtCm0XB998M54vOA"
+            alt="Lana Del Rey"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>Biografia</h2>
+          <p>
+            Elizabeth Woolridge Grant, mais conhecida como Lana Del Rey, nasceu
+            em 21 de junho de 1985, em Nova York. Criada em meio à agitação da
+            cidade e à serenidade de Lake Placid, ela descobriu sua paixão pela
+            música e pela literatura ainda jovem, traçando um caminho que misturaria
+            o romantismo vintage com uma sensibilidade moderna.
+          </p>
+          <p>
+            Trabalhando inicialmente em bares e pequenos eventos, Lana se
+            reinventou diversas vezes até alcançar o sucesso com o icônico
+            single "Video Games". Sua trajetória está repleta de desafios,
+            transformações e momentos de introspecção, que se refletem tanto em sua
+            obra musical quanto em sua visão de mundo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Momentos Pessoais -->
+    <section id="momentos" class="bg-danger text-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Momentos Pessoais</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Infância e Juventude</h5>
+                <p class="card-text">
+                  Lana viveu momentos únicos entre o ambiente urbano de Nova York e a
+                  tranquilidade de Lake Placid, descobrindo cedo seu amor pela arte.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Descoberta da Paixão</h5>
+                <p class="card-text">
+                  Incentivada pelos pais e pela influência da literatura, ela encontrou
+                  na música a forma de expressar suas emoções e vivências.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dark text-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Transformação Artística</h5>
+                <p class="card-text">
+                  Cada experiência vivida a impulsionou a se reinventar, moldando sua
+                  identidade única e marcante.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Curiosidades com Modal -->
+    <section id="curiosidades" class="container my-5">
+      <div class="text-center">
+        <button
+          class="btn btn-info"
+          data-bs-toggle="modal"
+          data-bs-target="#curiosidadesModal"
+          title="Clique para ver curiosidades sobre a vida da artista"
+        >
+          Ver Curiosidades
+        </button>
+      </div>
+
+      <div
+        class="modal fade"
+        id="curiosidadesModal"
+        tabindex="-1"
+        aria-labelledby="curiosidadesModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="curiosidadesModalLabel">
+                Curiosidades Sobre a Vida de Lana Del Rey
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li><strong>Nome Real:</strong> Elizabeth Woolridge Grant.</li>
+                <li><strong>Nascimento:</strong> 21 de junho de 1985, em Nova York.</li>
+                <li>
+                  <strong>Infância:</strong> Passou parte de sua juventude em Lake Placid.
+                </li>
+                <li>
+                  <strong>Formação:</strong> Estudou Filosofia na Fordham University,
+                  mesclando intelectualidade e arte.
+                </li>
+                <li>
+                  <strong>Início da Carreira:</strong> Cantava em bares antes de lançar seu
+                  sucesso "Video Games".
+                </li>
+                <li>
+                  <strong>Inspiração:</strong> A literatura e os clássicos do cinema sempre
+                  influenciaram sua visão de mundo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center p-3">
+      <p class="mb-0">&copy; 2025 Lana Del Rey Fanpage</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
